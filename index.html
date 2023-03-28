@@ -5,68 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
-<body>
+<body>s
     <header>
-        <h1 style="text-align: center; color:red;background-color: black;">My Portfolio</h1>
+        <h1 >My Portfolio</h1>
     </header>
 
     <section>
-        <aside>
-            <h3 style="color: darkblue;">About Me</h3>
+        <aside class="aside">
+            <h3 >About Me</h3>
             <p>My name is Rohit Jha.I am working in E&Y as a Associate Software Engineer in Technology Consulting.I have completed my B.Tech in Computer Science Engineering from Swami Vivekananda Institute of Science and technology.I have completed my Higher Secondary and Secondary from Hirendra Leela Patranavis School in Kolkata.</p>
         </aside>
 
         <br>
 
-        <article>
-            <h4 style="color: chocolate;">Relevant Information</h4>
+        <article class="article">
+            <h4>Relevant Information</h4>
+        <div id="list">
             <p ><strong>Programming languages:</strong> Java</p>
             <p ><strong>UI:</strong> HTML,CSS</p>
             <p><strong>Database language:</strong> SQL</p>
+        </div>
             <p>I have good understanding of Object Oriented Design, Database Management System,Data structure and Algorithm.</p>
             <p>I have underwent E&Y Bootcamp training where I learnt soft skills like presentation skills,writing professional emails and project report writing, and to formally communicate with the clients.</p>
             <br>
 
-            <h4 style="color: darkgreen;">Projects</h4>
-            <p ><strong style="color: darkolivegreen;">MedSupport:</strong>An IOT based health monitoring system which collects a patients vitals like temperature and heart beat with use of different sensors and an Arduino Board. The data collected is then shared with doctor to monitor patient's health. </p>
-             
-            <br>
-            <div>
+            <h4 >Projects</h4>
+            <p ><strong >MedSupport:</strong>An IOT based health monitoring system which collects a patients vitals like temperature and heart beat with use of different sensors and an Arduino Board. The data collected is then shared with doctor to monitor patient's health. </p>
+        </article>
+
+            <div class="social">
                 <h4>Social Links</h4>
-                <a href="#">Linkedin</a>
-                <a href="#">LinkTree</a>
+                <a href="#"><img src="linkedin.jpg" alt="linkedin"></a>
+                <a href="#"><img src="linktree.png" alt="linktree"></a>
+                
             </div>
 
-            <h2 style="text-align: center;">Contact Me</h2>
-            <form action="" style="text-align: center;">
-                <div>
+            <div class="form">
+            <h2 >Contact Me</h2>
+            <form  action="" id="my-form">
+                <div class="name">
                 <label>Name</label>
-                <input type="text" name="uname" placeholder="Enter your name">
+                <input type="text" id="uname" placeholder="Enter your name">
                 </div>
 
-                <div>
+                <div class="email">
                     <label>Email</label>
-                    <input type="email" name="uemail">
+                    <input type="email" id="uemail">
                 </div>
 
-                <div>
+                <div class="mobile">
                     <label>Mobile No</label>
                     <input type="number" name="uphone">
                 </div>
 
-                <div>
+                <div class="msg">
                     <label>Message</label>
                     <textarea name="umsg" ></textarea>
                 </div>
-                <input type="submit" value="submit">
+                
+                <input type="submit" value="Submit">
 
             </form>
-             
-        </article>
+        </div>
+        
     </section>
     <br>
     <footer>
-        <p style="text-align: center;"><strong>Copyright &copy; 2023, Blog Website</strong</p>
+        <p ><strong>Copyright &copy; 2023, Blog Website</strong</p>
     </footer>
+    
 </html>
